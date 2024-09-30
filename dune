@@ -1,0 +1,8 @@
+(executable
+ (name test_runner)
+ (modules test_runner)
+ (libraries problems tests))
+
+(rule
+ (alias runtest)
+ (action (run ./test_runner.exe)))
